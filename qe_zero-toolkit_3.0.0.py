@@ -1,6 +1,6 @@
 # QE Zero - Toolkit 
 # Gestione Avanzata dei Quadri Economici Opere Pubbliche
-# Versione 3.0.0
+# Versione 3.0.0 per la compilazione
 #
 # Copyright (C) 2025 Rodolfo Sabelli
 #
@@ -984,4 +984,5 @@ class CatalogoExportApp(tk.Tk):
 
 if __name__ == "__main__":
     app = CatalogoExportApp()
+
     app.mainloop()
