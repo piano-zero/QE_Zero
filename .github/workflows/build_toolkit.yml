@@ -1,0 +1,36 @@
+name: Build QE Toolkit
+
+on:
+  push:
+    paths:
+      - 'qe_zero-toolkit_3.0.0.py' # Si attiva solo se modifichi questo file
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout codice
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Installa dipendenze
+      run: |
+        python -m pip install --upgrade pip
+        # Fondamentale openpyxl per la gestione dei file Excel
+        pip install pyinstaller openpyxl
+
+    - name: Build EXE
+      run: |
+        # Usiamo --collect-submodules per essere sicuri che openpyxl venga incluso bene
+        pyinstaller --noconsole --onefile --collect-submodules openpyxl --name "QE_Toolkit_3.0.0" qe_zero-toolkit_3.0.0.py
+
+    - name: Caricamento Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: QE-Toolkit-EXE
+        path: dist/*.exe
