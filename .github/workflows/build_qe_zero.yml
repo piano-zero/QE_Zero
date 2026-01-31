@@ -1,0 +1,35 @@
+name: Build QE Zero
+
+on:
+  push:
+    paths:
+      - 'qe_zero_2.0.0.py' # Si attiva solo se modifichi questo file
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout codice
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Installa dipendenze
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        # Se in futuro userai librerie esterne qui, aggiungile dopo pyinstaller
+
+    - name: Build EXE
+      run: |
+        pyinstaller --noconsole --onefile --name "QE_Zero_2.0.0" qe_zero_2.0.0.py
+
+    - name: Caricamento Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: QE-Zero-EXE
+        path: dist/*.exe
