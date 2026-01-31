@@ -92,14 +92,15 @@ Il progetto è aperto a suggerimenti! Se sei un tecnico o uno sviluppatore:
 
 ## 📄 Licenza
 
-Distribuito sotto licenza **GNU General Public License v3.0**. Vedi `LICENSE` per maggiori informazioni.
+Distribuito sotto licenza **GNU General Public License v3.0**.
 
 ---
 
 <div align="center">
   
-  Created with 💻 & ☕ by [Il Tuo Nome]
+  Created with ❤️ by [pianozero](https://github.com/piano-zero)
   
-  *Se questo tool ti semplifica il lavoro, lascia una ⭐️ al repository!*
+  *Se questo progetto ti è stato utile, lascia una ⭐️ al repository!*
+
 
 </div>
