@@ -5,7 +5,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![GUI](https://img.shields.io/badge/Interface-Tkinter-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-GPLv3-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Portable_&_Stable-purple?style=for-the-badge)
 
 **Dimentica i fogli di calcolo sparsi e gli errori di arrotondamento.** QE Zero è lo strumento open-source progettato per Ingegneri, Architetti e RUP per redigere, gestire e stampare i Quadri Economici dei lavori pubblici con precisione e velocità.
@@ -92,7 +92,7 @@ Il progetto è aperto a suggerimenti! Se sei un tecnico o uno sviluppatore:
 
 ## 📄 Licenza
 
-Distribuito sotto licenza **MIT**. Vedi `LICENSE` per maggiori informazioni.
+Distribuito sotto licenza **GNU General Public License v3.0**. Vedi `LICENSE` per maggiori informazioni.
 
 ---
 
