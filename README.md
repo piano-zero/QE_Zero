@@ -57,7 +57,7 @@ QE_ZERO/
 
 1.  **Clona il repository** (o scarica lo zip):
     ```bash
-    git clone https://github.com/TUO_USERNAME/QE_Zero.git
+    git clone https://github.com/piano-zero/QE_Zero.git
     ```
 
 2.  **Librerie:**
