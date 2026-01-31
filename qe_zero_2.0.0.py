@@ -1,5 +1,5 @@
 # QE Zero - Gestione Quadri Economici Opere Pubbliche
-# Versione 2.0.0
+# Versione 2.0.0 per la compilazione
 #
 # Copyright (C) 2025 Rodolfo Sabelli
 #
